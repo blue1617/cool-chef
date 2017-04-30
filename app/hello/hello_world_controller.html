@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hi</title>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.2/angular.min.js"></script>
+    <script src="hello_world_controller.js"></script>
+</head>
+<body>
+<div ng-app="HelloWorldApp">
+    Hello {{ "World" }}
+    <div ng-controller="HelloWorldController">
+        <h1>{{greeting}}</h1>
+
+        <form ng-submit="add()">
+            <input ng-model="title">
+            <button>Add</button>
+        </form>
+        <ul>
+            <li ng-repeat="t in tasks track by $index">{{ t }}
+                <button ng-click="delete()">x</button>
+            </li>
+        </ul>
+    </div>
+</div>
+</body>
+</html>

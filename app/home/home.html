@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<nav>
+    <img class="logo" src="img/cool-cook-logo.jpg">
+</nav>
+
+<div id="main-container">
+    <div class="ingredient-submission">
+        <h2>Calculate the CO2 production of the food you eat!</h2>
+        <h3>Just select the ingredient, quantity in pounds and the continent of its origin and press ADD.</h3>
+        <br>
+        <form id="submit-ingredient" >
+            <label for="ingredient-list">Add an ingredient:</label>
+            <select id="ingredient-list">
+                <option value="Tomatoes">Tomatoes</option>
+                <option value="Garlic">Garlic</option>
+                <option value="Basil">Basil</option>
+                <option value="Mozzarella">Mozzarella</option>
+                <option value="Tuna">Tuna</option>
+                <option value="Apples">Apples</option>
+                <option value="Banana">Banana</option>
+                <option value="Grapes">Grapes</option>
+                <option value="Sugar">Sugar</option>
+                <option value="Yoghurt">Yoghurt</option>
+            </select>
+            <br>
+            <br>
+
+            <label for="quantity">QTY (pounds):</label>
+            <input id="quantity" type="number"/>
+
+            <label for="continent-list">Continent:</label>
+            <select id="continent-list">
+                <option value="Europe">Europe</option>
+            </select>
+
+            <input type="submit" value="Add"/>
+            <!--<button id="add-btn">ADD</button>-->
+        </form>
+        <br>
+    </div>
+
+    <div class="ingredient-impact">
+        <h4>Because of these ingredients:</h4>
+
+        <div class="ingredient-block">
+            <div id="one-ingredient"><span class="one-ingredient-name">BASIL</span>
+                <button id="minus-btn">-</button>
+            </div>
+            <div id="one-ingredient"><span class="one-ingredient-name">BASIL</span>
+                <button id="minus-btn">-</button>
+            </div>
+            <div id="one-ingredient"><span class="one-ingredient-name">BASIL</span>
+                <button id="minus-btn">-</button>
+            </div>
+            <div id="one-ingredient"><span class="one-ingredient-name">BASIL</span>
+                <button id="minus-btn">-</button>
+            </div>
+            <div id="one-ingredient"><span class="one-ingredient-name">BASIL</span>
+                <button id="minus-btn">-</button>
+            </div>
+            <div id="one-ingredient"><span class="one-ingredient-name">BASIL</span>
+                <button id="minus-btn">-</button>
+            </div>
+            <div id="one-ingredient"><span class="one-ingredient-name">BASIL</span>
+                <button id="minus-btn">-</button>
+            </div>
+            <div id="one-ingredient"><span class="one-ingredient-name">BASIL</span>
+                <button id="minus-btn">-</button>
+            </div>
+            <div id="one-ingredient"><span class="one-ingredient-name">BASIL</span>
+                <button id="minus-btn">-</button>
+            </div>
+            <div id="one-ingredient"><span class="one-ingredient-name">BASIL</span>
+                <button id="minus-btn">-</button>
+            </div>
+            <div id="one-ingredient"><span class="one-ingredient-name">BASIL</span>
+                <button id="minus-btn">-</button>
+            </div>
+            <div id="one-ingredient"><span class="one-ingredient-name">BASIL</span>
+                <button id="minus-btn">-</button>
+            </div>
+            <div id="one-ingredient"><span class="one-ingredient-name">BASIL</span>
+                <button id="minus-btn">-</button>
+            </div>
+            <div id="one-ingredient"><span class="one-ingredient-name">BASIL</span>
+                <button id="minus-btn">-</button>
+            </div>
+            <div id="one-ingredient"><span class="one-ingredient-name">BASIL</span>
+                <button id="minus-btn">-</button>
+            </div>
+            <div id="one-ingredient"><span class="one-ingredient-name">BASIL</span>
+                <button id="minus-btn">-</button>
+            </div>
+            <div id="one-ingredient"><span class="one-ingredient-name">BASIL</span>
+                <button id="minus-btn">-</button>
+            </div>
+            <div id="one-ingredient"><span class="one-ingredient-name">BASIL</span>
+                <button id="minus-btn">-</button>
+            </div>
+            <div id="one-ingredient"><span class="one-ingredient-name">BASIL</span>
+                <button id="minus-btn">-</button>
+            </div>
+            <div id="one-ingredient"><span class="one-ingredient-name">BASIL</span>
+                <button id="minus-btn">-</button>
+            </div>
+        </div>
+        <br>
+
+        <h4>This amount of CO2 is produced:</h4>
+        <br>
+
+        <div class="co2-production">During production: <span id="production-amount">0.45 kg</span></div>
+        <div class="co2-transportation">During transportation: <span id="transportation-amount">0.23 kg</span></div>
+
+        <br>
+        <div id="co2-verdict">This amount of CO2 is within the limits of the norm</div>
+    </div>
+</div>
+
+<script src="js/script.js"></script>
+</body>
+</html>
