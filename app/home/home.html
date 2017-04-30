@@ -19,7 +19,7 @@
         <h2>Calculate the CO2 production of the food you eat!</h2>
         <h3>Just select the ingredient, quantity in pounds and the continent of its origin and press ADD.</h3>
         <br>
-        <form id="submit-ingredient" >
+        <form id="submit-ingredient" action="https://sheltered-mountain-28839.herokuapp.com/coolcook">
             <label for="ingredient-list">Add an ingredient:</label>
             <select id="ingredient-list">
                 <option value="Tomatoes">Tomatoes</option>
@@ -41,7 +41,13 @@
 
             <label for="continent-list">Continent:</label>
             <select id="continent-list">
+                <option value="Europe">Asia</option>
+                <option value="Europe">Africa</option>
+                <option value="Europe">Antarctica</option>
+                <option value="Europe">Australia</option>
                 <option value="Europe">Europe</option>
+                <option value="Europe">North America</option>
+                <option value="Europe">South America</option>
             </select>
 
             <input type="submit" value="Add"/>
